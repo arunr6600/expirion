@@ -1,0 +1,70 @@
+@import '~src/scss/_variables';
+@import '~src/scss/_mixins';
+
+
+.footer-section {
+  .custom-container {
+    padding-bottom: 0;
+  }
+
+  .footer-wrapper {
+    padding-top: 45px;
+    border-top: 1px solid #D8D8D8;
+
+    .content-section {
+      margin-bottom: 70px;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .title {
+        font-size: 18px;
+        font-weight: 600;
+        color: $gray-dark;
+        margin-bottom: 22px;
+
+        @media screen and (max-width:767px) {
+          margin-bottom: 16px;
+        }
+      }
+
+      .text {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        color: $gray-dark;
+      }
+
+      .info-data {
+        .data-wrapper {
+          padding: 0;
+          list-style: none;
+        }
+      }
+
+      .contact-wrapper {
+        justify-content: flex-end;
+
+        @media screen and (max-width:768px) {
+          justify-content: flex-start;
+        }
+      }
+
+
+      @media screen and (max-width:768px) {
+        .info-data-container {
+          margin-bottom: 40px;
+
+          &:nth-child(1),
+          &:nth-child(2) {
+            width: 50%;
+          }
+        }
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,67 @@
+@import '~src/scss/_variables';
+@import '~src/scss/_mixins';
+
+
+.sign-up-wrapper {
+    .form-wrapper{
+        padding: 50px 50px 20px 50px;
+
+        @media screen and (max-width:767px){
+              padding: 30px 16px 0px 16px;
+        }
+        
+    }
+  .form-group {
+    position: relative;
+    margin-bottom: 25px;
+    cursor: pointer;
+    input{
+        border: none;
+        border-bottom:1px solid #EBEBEB;
+        border-radius: 0;
+        // padding-left: 0;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+    label{
+        font-size: 14px;
+        font-weight: 400;
+        color: $black;
+        cursor: pointer;
+    }
+    .form-control-placeholder {
+      position: absolute;
+      top: 5px;
+      padding-bottom: 5px;
+      transition: 0.3s linear;
+      opacity: 0.5;
+    }
+
+    .form-control:focus+.form-control-placeholder,
+    .form-control:valid+.form-control-placeholder {
+      font-size: 75%;
+      transform: translate3d(0, -100%, 0);
+      opacity: 1;
+    }
+
+  }
+  .btn-wrapper{
+      margin-top: 20px;
+      button{
+         color: $white; 
+         width: 100%;
+         font-size: 16px;
+         border-top-left-radius: 0;
+         border-top-right-radius: 0;
+      }
+  }
+}

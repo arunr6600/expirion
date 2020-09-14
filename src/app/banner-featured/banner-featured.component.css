@@ -1,0 +1,21 @@
+.banner-featured {
+  min-height: 100vh;
+  position: relative;
+  background-image: url("../../assets/images/featured-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+.banner-featured .custom-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  min-height: 100vh;
+}
+
+.banner-featured .custom-container .content-box {
+  align-self: flex-end;
+}

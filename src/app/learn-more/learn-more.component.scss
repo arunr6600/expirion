@@ -1,0 +1,119 @@
+@import '~src/scss/_variables';
+@import '~src/scss/_mixins';
+
+.learnmore-section {
+  .custom-container {
+    padding-top: 0;
+
+    .content-section {
+      max-width: 330px;
+
+      @media screen and (max-width:767px) {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .title {
+        font-size: 50px;
+        color: $primary;
+        font-weight: 600;
+        margin-bottom: 25px;
+
+        @media screen and (max-width:767px) {
+          font-size: 22px;
+          margin-bottom: 8px;
+        }
+      }
+
+      .sub-text {
+        color: $text-color;
+        margin-bottom: 17px;
+
+        @media screen and (max-width:767px) {
+          max-width: 312px;
+          margin: auto;
+          margin-bottom: 24px;
+
+        }
+      }
+    }
+
+    .showcsae {
+      .image-wrapper {
+        .image-item {
+          margin: 10px;
+          width: 50%;
+
+          .image {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 6px;
+          }
+
+          &:nth-child(1) {
+            .image {
+              background-image: url('../../assets/images/learnMore1.png');
+              width: 17.9vw;
+              height: 18.1vw;
+              margin-left: auto;
+
+              @media screen and (max-width:767px) {
+                width: 34.1vw;
+                height: 34.8vw;
+              }
+            }
+          }
+
+          &:nth-child(2) {
+            .image {
+              background-image: url('../../assets/images/learnMore2.png');
+              width: 22.258vw;
+              height: 22.41vw;
+
+              @media screen and (max-width:767px) {
+                width: 42.59vw;
+                height: 42.7vw;
+              }
+            }
+          }
+        }
+
+        &:nth-child(1) {
+          align-items: flex-end;
+        }
+
+        &:nth-child(2) {
+          .image-item {
+            &:nth-child(1) {
+              .image {
+                background-image: url('../../assets/images/learnMore3.png');
+                width: 11.94vw;
+                height: 12vw;
+
+                @media screen and (max-width:767px) {
+                  width: 22.7vw;
+                  height: 22.9vw;
+                }
+              }
+            }
+
+            &:nth-child(2) {
+              .image {
+                background-image: url('../../assets/images/learnMore4.png');
+                width: 16.78vw;
+                height: 16.9vw;
+
+                @media screen and (max-width:767px) {
+                  width: 32.2vw;
+                  height: 32.5vw;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

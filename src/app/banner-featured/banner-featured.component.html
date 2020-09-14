@@ -1,0 +1,31 @@
+    <div class="banner-featured">
+      <div class="custom-container">
+
+        <!--Featured story content section -->
+
+        <div class="content-box">
+          <div class="title" data-aos="fade-right" data-aos-duration="500">
+            Lorem Ipsum Dolor Sit Amet
+          </div>
+          <div class="text sub-text" data-aos="fade-right" data-aos-duration="600">
+            At iam decimum annum in spelunca iacet. Cur tantas regiones barbarorum pedibus obiit, tot maria
+            transmisit
+          </div>
+          <button type="button" class="common-btn-warning" data-aos="fade-up"
+            data-aos-duration="700">contact</button>
+        </div>
+
+        <!-- Featured stories avatar cards -->
+
+        <div class="featured-stories-section">
+          <div class="title" data-aos="fade-down">Featured Stories</div>
+          <div class="image-card-tile-section">
+            <div class="image-card-tile-wrapper" data-aos="fade-up" data-aos-easing="linear"
+              data-aos-duration="500" *ngFor="let tile of imageTiles">
+              <app-image-card-tile [date]='tile.date' [subText]='tile.subText' [imageUrl]='tile.imageUrl'>
+              </app-image-card-tile>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
